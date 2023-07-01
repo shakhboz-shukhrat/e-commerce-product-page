@@ -1,0 +1,83 @@
+.header {
+  width: 1110px;
+  display: flex;
+
+  .logo {
+    width: 137.5px;
+    height: 20px;
+    margin-top: 43px;
+    border-radius: 0;
+  }
+  .menu {
+    display: none;
+  }
+
+  .cart {
+    width: 21.82px;
+    height: 20px;
+    margin-top: 44px;
+    margin-left: 380px;
+    cursor: pointer;
+    border-radius: 0;
+  }
+
+  .hero {
+    width: 50px;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 28px;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid #ff7e1b;
+      border-radius: 50px;
+    }
+  }
+  .product-count {
+    position: absolute;
+    top: 2.56rem;
+    left: 73.25rem;
+    z-index: 9;
+    color: #fff;
+    font-size: 0.625rem;
+    font-family: Kumbh Sans;
+    font-weight: 700;
+    width: 1.1875rem;
+    height: 0.8125rem;
+    border-radius: 6.5px;
+    background: #ff7e1b;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    .menu {
+      display: block;
+      width: 1rem;
+      height: 0.9375rem;
+      margin: 1.5rem 0 0 1.5rem;
+      cursor: pointer;
+      border-radius: 0;
+    }
+    .logo {
+      margin-left: 1rem;
+      margin-top: 1.25rem;
+      cursor: pointer;
+    }
+    .cart {
+      border-radius: 0;
+      margin-left: 5.59rem;
+      margin-top: 1.19rem;
+    }
+    .hero {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: 1.19rem;
+      margin-left: 1.39rem;
+    }
+    .product-count {
+      z-index: 9;
+      top: 1rem;
+      left: 18.25rem;
+    }
+  }
+}

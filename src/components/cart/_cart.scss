@@ -1,0 +1,52 @@
+.cart-container {
+  display: block;
+  position: absolute;
+  width: 360px;
+  height: 256px;
+  left: 991px;
+  top: 94px;
+  background: #ffffff;
+  box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+  border-radius: 10px;
+  z-index: 10;
+  h1 {
+    height: 16px;
+    margin: 24px 0 0 24px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    width: 16px;
+    color: #1d2026;
+  }
+  hr {
+    width: 360px;
+    height: 1px;
+    background: #e4e9f2;
+  }
+  p {
+    height: 26px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical t  o box height, or 162% */
+    margin-top: 77px;
+    text-align: center;
+
+    color: #69707d;
+  }
+}
+
+@media (max-width: 375px) {
+  .cart-container {
+    top: 4.75rem;
+    left: 0.5rem;
+    hr {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.cartContent {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .products {
+    display: flex;
+    margin-top: 0;
+
+    img {
+      width: 3.125rem;
+      height: 3.125rem;
+      border-radius: 4px;
+      margin-left: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .text {
+      display: block;
+      width: 13.375rem;
+      height: 3.25rem;
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+      .pa1 {
+        color: #69707d;
+        font-size: 1rem;
+        font-family: Kumbh Sans;
+        line-height: 1.625rem;
+        width: 13.375rem;
+        margin: 0;
+        padding: 0;
+        text-align: start;
+      }
+      .pa2 {
+        color: #69707d;
+        font-size: 1rem;
+        font-family: Kumbh Sans;
+        line-height: 1.625rem;
+        margin: 0;
+        padding: 0;
+        text-align: start;
+        .span2 {
+          color: #1d2026;
+          font-size: 1rem;
+          font-family: Kumbh Sans;
+          font-weight: 700;
+          line-height: 1.625rem;
+          margin-left: 0.37rem;
+        }
+      }
+    }
+    .delete {
+      display: block;
+      width: 0.875rem;
+      height: 1rem;
+      margin-top: 2.62rem;
+      margin-left: 1.19rem;
+      cursor: pointer;
+    }
+  }
+  button {
+    width: 19.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    background: #ff7e1b;
+    color: white;
+    font-size: 1rem;
+    font-family: Kumbh Sans;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .cartContent {
+    .products {
+      justify-content: start;
+    }
+  }
+}

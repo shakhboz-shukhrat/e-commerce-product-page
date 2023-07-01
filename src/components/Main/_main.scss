@@ -1,0 +1,39 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.main {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  hr {
+    width: 1110px;
+    height: 1px;
+    background: #e4e9f2;
+    margin-top: 34px;
+    z-index: 1;
+  }
+  .content {
+    display: flex;
+    width: 1015px;
+    height: 565px;
+    justify-content: space-between;
+    margin-top: 5.63rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    align-items: baseline;
+    hr {
+      display: none;
+    }
+    .content {
+      flex-direction: column;
+      margin-top: 1.75rem;
+    }
+  }
+}
